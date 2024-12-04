@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "id": 1,
+        "description": "Buy groceries and cook dinner",
+        "status": "done",
+        "createdAt": "2024-12-04T12:22:16.875649",
+        "updatedAt": "2024-12-04T12:26:58.764261"
+    },
+    {
+        "id": 2,
+        "description": "Buy groceries",
+        "status": "todo",
+        "createdAt": "2024-12-04T12:26:04.871549",
+        "updatedAt": "2024-12-04T12:26:04.871568"
+    },
+    {
+        "id": 3,
+        "description": "Jacob skal liige i bad",
+        "status": "done",
+        "createdAt": "2024-12-04T12:26:19.213765",
+        "updatedAt": "2024-12-04T12:27:41.245425"
+    }
+]

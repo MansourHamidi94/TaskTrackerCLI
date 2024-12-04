@@ -5,7 +5,10 @@ from datetime import datetime
 from .utils import load_tasks, save_tasks
 
 def add_task(description):
+    print ("Attempting to add task...") # Debugging output
     tasks = load_tasks()
+    print (f"Loaded tasks: {tasks}") # Debugging output
+    
     task_id = max((task["id"] for task in tasks), default=0) + 1
     new_task = {
         "id": task_id,
@@ -16,6 +19,7 @@ def add_task(description):
     }
     tasks.append(new_task)
     save_tasks(tasks)
+    print(f"Task added succesfully: {new_task}") # Debugging output
     return f"Task added successfully (ID: {task_id})"
 
 def list_tasks(status=None):
